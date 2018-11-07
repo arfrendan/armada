@@ -37,19 +37,19 @@
 	  	</table>
 	  </div>
 	  <div class="loginform" align="center">
-	  	<form class="form-horizontal" action="login.php" method="post">
+	  	<form class="form-horizontal" action="signup.php" method="post">
 	  		<fieldset>
 	  			<div class="legend">
-					<legend>Login</legend>
+					<legend>signup</legend>
 				</div>
 					
 				<br />
 				<br />
 				<br />
 				<div class="control-group">
-					<label class="control-label" for="inputlogin" >LoginID</label>
+					<label class="control-label" for="loginID" >LoginID</label>
 					<div class="controls">
-						<input type="text" class="input-xlarge" placeholder="" name="loginID"/>
+						<input type="text" class="input-xlarge" id="loginID" placeholder="" name="loginID"/>
 						
 					</div>
 				</div>
@@ -58,13 +58,13 @@
 				<div class="control-group">
 					<label class="control-label" for="inputpassword" >Password</label>
 					<div class="controls">
-						<input type="password" class="input-xlarge" placeholder="" name="password"/>
+						<input type="password" id="inputpassword" class="input-xlarge" placeholder="" name="password"/>
 						
 					</div>
 				</div>
 				<br />
 				<br />
-				<input class="btn-primary" type="submit" name="submit" value="login" width="200px"/>
+				<input class="btn-primary" type="submit" name="submit" value="signup" width="200px"/>
 	  			
 	  		</fieldset>
 	  	</form>

@@ -35,7 +35,7 @@
 			</table>
 	  	</div>
 	  	<div class="loginform" >
-			<form class="form-horizontal">
+			<form class="form-horizontal" method="post" action="sinscrire.php">
 				<fieldset >
 					<div class="legend">
 						<legend>inscrire</legend>
@@ -44,46 +44,45 @@
 					<div class="form-row">
 						<div class="form-group col-md-6">
 						  <label for="inputNom">Nom</label>
-						  <input type="text" class="form-control" id="inputNom" placeholder="Nom">
+						  <input type="text" class="form-control" id="inputNom" placeholder="Nom" name="nom">
 						</div>
 						<div class="form-group col-md-6">
 						  <label for="inputPrenom">Prenom</label>
-						  <input type="text" class="form-control" id="inputPrenom" placeholder="Prenom">
+						  <input type="text" class="form-control" id="inputPrenom" placeholder="Prenom" name="prenom">
 						</div>
 					</div>
 					
 					<div class="form-group">
 						<label  for="inputlogin" >LoginID</label>
-						<input type="text" id="inputlogin"  class="form-control" placeholder="loginID, chiffres et lettres"/>
+						<input type="text" id="inputlogin"  name="loginID"  class="form-control" name="loginID" placeholder="loginID, chiffres et lettres"/>
 					</div>
 					
 					<div class="form-group">
 						<label for="inputpassword" >Password</label>
-						<input type="password" class="form-control" placeholder="Password"/>
+						<input type="password" class="form-control" name="password" name="password" placeholder="Password"/>
 					</div>
 					
 					<div class="form-row">
 						<div class="form-group col-md-4">
 							<label for="inputSexe">Sexe</label>
-							<select id="inputSexe" class="form-control">
-								<option selected="selected">choisir...</option>
-								<option value="monsieur">Monsieur</option>
+							<select id="inputSexe" class="form-control" name="sexe">
+								<option value="monsieur" selected="selected">Monsieur</option>
 								<option value="madame">Madame</option>
 							</select>
 						</div>
 						<div class="form-group col-md-8">
 							<label for="inputEmail">Email</label>
-							<input type="email" class="form-control" placeholder="e-mail"/>
+							<input type="email" class="form-control" placeholder="e-mail" name="email"/>
 						</div>
 					</div>
 					
 					<div class="form-group">
 						<div class="form-check">
-							<input type="checkbox" class="form-check-input" id="gridCheck"/>
+							<input type="checkbox" class="form-check-input" name="verifier" id="gridCheck" value="verifier"/>
 							<label for="gridCheck" class="form-check-label">Verifier</label>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-primary">s'inscrire</button>
+					<button type="submit" class="btn btn-primary" value="submit" name="submit">s'inscrire</button>
 				</fieldset>
 			</form>
 	  	</div>
